@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Abarna Sekar | Portfolio</title>
+<meta name="description" content="Abarna Sekar - Graphic Designer and Web Developer Portfolio">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg: #08040f;
+    --card: #171020;
+    --purple: #a855f7;
+    --violet: #7c3aed;
+    --pink: #d946ef;
+    --white: #ffffff;
+    --muted: #c8bfd5;
+}
+
+body {
+    background:
+        radial-gradient(circle at 15% 15%, #39145b 0%, transparent 35%),
+        radial-gradient(circle at 85% 55%, #27103e 0%, transparent 35%),
+        linear-gradient(135deg, #050308, #10071b, #08040f);
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+/* NAVBAR */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(8,4,15,.95);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid #9b4dff44;
+}
+
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 800;
+    background: linear-gradient(120deg,#e879f9,#8b5cf6);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.logo-text h3 { font-size: 15px; }
+.logo-text p { font-size: 11px; color: var(--muted); }
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    font-size: 13px;
+    transition: .3s;
+}
+
+.nav-links a:hover { color: #d879ff; }
+
+.download-btn {
+    padding: 9px 16px;
+    border-radius: 9px;
+    background: linear-gradient(100deg,#7028bd,#a855f7);
+}
+
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #d879ff;
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px 5%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 2, 15, 0.90) 0%,
+            rgba(10, 3, 25, 0.55) 50%,
+            rgba(10, 3, 25, 0.15) 100%
+        ),
+        url("hero-neon.png");
+
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hello {
+    font-size: 19px;
+    color: #c9b8dc;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0;
+    text-align: left;
+}
+
+.hero-art {
+    display: none;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 8px 0;
+}
+
+.hero-content h1 span {
+    background: linear-gradient(90deg,#e879f9,#8b5cf6);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero-content h2 {
+    font-size: 19px;
+    background: linear-gradient(90deg,#e879f9,#a78bfa);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 12px 0;
+}
+
+.hero-content p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--muted);
+    max-width: 460px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    margin-top: 22px;
+}
+
+.primary-btn, .outline-btn {
+    padding: 11px 20px;
+    border-radius: 9px;
+    font-size: 12px;
+    transition: .3s;
+}
+
+.primary-btn {
+    background: linear-gradient(100deg,#7028bd,#c026d3);
+}
+
+.outline-btn { border: 1px solid #c084fc; }
+
+.primary-btn:hover, .outline-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px #a855f766;
+}
+
+.socials {
+    display: flex;
+    gap: 13px;
+    margin-top: 23px;
+}
+
+.socials a {
+    width: 32px;
+    height: 32px;
+    background: #251333;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.socials a:hover {
+    background: #9333ea;
+    transform: translateY(-4px);
+}
+
+/* SECTION TITLE */
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    color: #d879ff;
+    font-size: 19px;
+    font-weight: 600;
+    margin: 30px 0 22px;
+    text-align: center;
+}
+
+.section-title:before,
+.section-title:after {
+    content: "";
+    width: 65px;
+    height: 1px;
+    background: linear-gradient(90deg,transparent,#a855f7);
+}
+
+.section-title:after {
+    background: linear-gradient(90deg,#a855f7,transparent);
+}
+
+/* FEATURED PROJECT */
+
+.featured {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    padding: 25px;
+    border: 1px solid #7541a5;
+    border-radius: 15px;
+    background: linear-gradient(120deg,#21132f,#100a19);
+    margin-bottom: 25px;
+}
+
+.featured-art {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    overflow: hidden;
+}
+
+.featured-art img {
+    width: 75%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.featured-info h2 { font-size: 20px; margin-bottom: 10px; }
+
+.featured-info p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 14px;
+}
+
+.visit-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #d879ff;
+    border-radius: 7px;
+    font-size: 12px;
+    color: #e9b5ff;
+}
+
+/* PROJECT CARDS */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 14px;
+    margin-bottom: 25px;
+}
+
+.project-card {
+    overflow: hidden;
+    border-radius: 13px;
+    border: 1px solid #51356b;
+    background: linear-gradient(140deg,#241432,#100a19);
+    transition: .35s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: #d879ff;
+    box-shadow: 0 10px 25px #0008;
+}
+
+.project-art {
+    height: 220px;
+    width: 100%;
+    overflow: hidden;
+    background: #100a19;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: transform .4s;
+}
+
+.project-card:hover .project-art img {
+    transform: scale(1.04);
+}
+
+.project-info { padding: 11px 12px 13px; }
+
+.project-info h3 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.project-info p {
+    font-size: 11px;
+    color: #d5c5e5;
+}
+
+.project-info small {
+    font-size: 10px;
+    color: #aa9bbd;
+}
+
+/* BOTTOM GRID */
+
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 22px;
+    padding: 15px 0 35px;
+}
+
+/* SKILLS */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 8px;
+}
+
+.skill {
+    background: linear-gradient(140deg,#29183a,#130c1d);
+    min-height: 90px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid #51356b;
+    transition: .3s;
+}
+
+.skill:hover {
+    border-color: #d879ff;
+    transform: translateY(-4px);
+}
+
+.skill i { font-size: 25px; color: #d879ff; }
+.skill span { font-size: 10px; text-align: center; }
+
+/* ABOUT */
+
+.about-content {
+    display: flex;
+    gap: 13px;
+    align-items: flex-start;
+}
+
+.profile {
+    width: 90px;
+    min-width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #d879ff;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg,#7028bd,#c026d3);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.about-text h4 { font-size: 12px; margin-bottom: 8px; }
+
+.about-text p {
+    font-size: 10px;
+    line-height: 1.8;
+    color: #c8bfd5;
+    margin-bottom: 9px;
+}
+
+/* CONTACT */
+
+.contact-box {
+    border: 1px solid #51356b;
+    border-radius: 13px;
+    padding: 16px;
+    background: linear-gradient(140deg,#241432,#100a19);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 17px;
+    font-size: 11px;
+    word-break: break-word;
+}
+
+.contact-item:last-child { margin-bottom: 0; }
+.contact-item i { font-size: 17px; width: 20px; color: #d879ff; }
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #51356b;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #c8bfd5;
+}
+
+/* ANIMATION */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity .7s,transform .7s;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px) {
+    .project-grid { grid-template-columns: repeat(2,1fr); }
+    .bottom-grid { grid-template-columns: 1fr 1fr; }
+    .contact-section { grid-column: span 2; }
+}
+
+@media(max-width:768px) {
+
+    .hero {
+        min-height: calc(100vh - 70px);
+        padding: 40px 15px;
+        text-align: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content h1 { font-size: 37px; }
+
+    .hero-content p { margin: auto; }
+
+    .hero-buttons, .socials { justify-content: center; }
+
+    .hero-art { min-height: 210px; }
+
+    .featured {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .featured-art {
+        height: 180px;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2,1fr);
+        gap: 9px;
+    }
+
+    .project-art { height: 170px; }
+
+    .bottom-grid { grid-template-columns: 1fr; }
+
+    .contact-section { grid-column: auto; }
+
+    .section-title { font-size: 16px; }
+}
+
+@media(max-width:380px) {
+    .project-grid { grid-template-columns: 1fr; }
+    .project-art { height: 230px; }
+}
+
+</style>
+</head>
+
+<body id="home">
+
+<!-- NAVBAR -->
+
+<header>
+<div class="container navbar">
+
+    <a href="#home" class="logo-area">
+        <div class="logo">AS</div>
+        <div class="logo-text">
+            <h3>Abarna Sekar</h3>
+            <p>Portfolio</p>
+        </div>
+    </a>
+
+    <div class="menu-btn" id="menuBtn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="download-btn">Contact Me</a>
+    </nav>
+
+</div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero reveal">
+
+    <div class="hero-content">
+        <div class="hello">Hello! I'm</div>
+
+        <h1>Abarna <span>Sekar</span></h1>
+
+        <h2>Graphic Designer &amp; Web Developer</h2>
+
+        <p>
+            Crafting clean designs &amp; responsive web experiences.
+            Turning ideas into real-world digital solutions.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="primary-btn">
+                View My Work <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <a href="#contact" class="outline-btn">
+                Contact Me <i class="far fa-paper-plane"></i>
+            </a>
+        </div>
+
+        <div class="socials">
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Behance"><i class="fab fa-behance"></i></a>
+            <a href="mailto:abarnasekar@gmail.com"><i class="far fa-envelope"></i></a>
+        </div>
+    </div>
+
+</section>
+
+<main class="container">
+
+<!-- WEB DEVELOPMENT -->
+
+<section id="projects" class="reveal">
+
+    <h2 class="section-title">Web Development Project</h2>
+
+    <div class="featured">
+
+        <div class="featured-art">
+            <img src="Images/web-development.png"
+                 alt="Creative Web Development Design">
+        </div>
+
+        <div class="featured-info">
+            <h2>Sevalar Marketing Website</h2>
+
+            <p>
+                Designed and developed a responsive business website
+                using HTML, CSS and JavaScript.
+            </p>
+
+            <a href="https://sevalar-marketing.onrender.com"
+               target="_blank" rel="noopener" class="visit-btn">
+                Visit Website <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICE DESIGN PROJECTS -->
+
+<section class="reveal">
+
+    <h2 class="section-title">Service Design Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Service/IT 1 .jpeg" alt="Eid Mubarak Poster">
+            </div>
+            <div class="project-info">
+                <h3>Eid Mubarak</h3>
+                <p>Greeting Design</p>
+                <small>Tools: Canva, Photoshop</small>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Service/IT 2 .jpeg" alt="Hiring Poster">
+            </div>
+            <div class="project-info">
+                <h3>Hiring</h3>
+                <p>Poster Design</p>
+                <small>Tools: Canva, Photoshop</small>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Service/IT 3 .jpeg" alt="Ayudha Pooja Poster">
+            </div>
+            <div class="project-info">
+                <h3>Ayudha Pooja</h3>
+                <p>Festival Poster</p>
+                <small>Tools: Canva, Photoshop</small>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Service/IT 4 .jpeg" alt="Digital Marketing Poster">
+            </div>
+            <div class="project-info">
+                <h3>Digital Marketing</h3>
+                <p>Creative Design</p>
+                <small>Tools: Canva, Photoshop</small>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Service/IT 5 .jpeg" alt="Diwali Poster">
+            </div>
+            <div class="project-info">
+                <h3>Diwali</h3>
+                <p>Festival Poster</p>
+                <small>Tools: Canva, Photoshop</small>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Service/IT 6 .jpeg" alt="Contact Poster">
+            </div>
+            <div class="project-info">
+                <h3>Contact Design</h3>
+                <p>Business Poster</p>
+                <small>Tools: Canva, Photoshop</small>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Service/IT 7 .jpeg" alt="Idea Loading Poster">
+            </div>
+            <div class="project-info">
+                <h3>Idea Loading</h3>
+                <p>Creative Poster</p>
+                <small>Tools: Canva, Photoshop</small>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONSTRUCTION PROJECTS -->
+
+<section class="reveal">
+
+    <h2 class="section-title">Construction Design Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Construction/construction 1 .jpeg" alt="Construction Design 01">
+            </div>
+            <div class="project-info">
+                <h3>Construction Design 01</h3>
+                <p>Architecture Design</p>
+                <small>Tools: Photoshop, Illustrator</small>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Construction/construction 2 .jpeg" alt="Construction Design 02">
+            </div>
+            <div class="project-info">
+                <h3>Construction Design 02</h3>
+                <p>Creative Poster</p>
+                <small>Tools: Photoshop, Illustrator</small>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Construction/construction 3 .jpeg" alt="Construction Design 03">
+            </div>
+            <div class="project-info">
+                <h3>Construction Design 03</h3>
+                <p>3D Visual Design</p>
+                <small>Tools: Photoshop, Illustrator</small>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Construction/construction 4 .jpeg" alt="Construction Design 04">
+            </div>
+            <div class="project-info">
+                <h3>Construction Design 04</h3>
+                <p>Architecture Design</p>
+                <small>Tools: Photoshop, Illustrator</small>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Construction/consrtuction 5 .jpeg" alt="Construction Design 05">
+            </div>
+            <div class="project-info">
+                <h3>Construction Design 05</h3>
+                <p>Architecture Poster</p>
+                <small>Tools: Photoshop, Illustrator</small>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOD PROJECTS -->
+
+<section class="reveal">
+
+    <h2 class="section-title">Food Design Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Food/food1.jpeg" alt="Nachos Poster">
+            </div>
+            <div class="project-info">
+                <h3>Nachos</h3>
+                <p>Food Poster</p>
+                <small>Tools: Figma</small>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Food/food 2 .jpeg" alt="Soup Poster">
+            </div>
+            <div class="project-info">
+                <h3>Soup</h3>
+                <p>Food Poster</p>
+                <small>Tools: Figma,Photoshop</small>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Food/food 3 .jpeg" alt="Fish Curry Poster">
+            </div>
+            <div class="project-info">
+                <h3>Fish Curry</h3>
+                <p>Food Poster</p>
+                <small>Tools: Figma,Photoshop</small>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Food/food 4 .jpeg" alt="Fried Rice Poster">
+            </div>
+            <div class="project-info">
+                <h3>Fried Rice</h3>
+                <p>Food Poster</p>
+                <small>Tools: Figma</small>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Food/food 5 .jpeg" alt="Food Design 05">
+            </div>
+            <div class="project-info">
+                <h3>Food Collection</h3>
+                <p>Food Poster Design</p>
+                <small>Tools: Figma</small>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Food/food 6 .jpeg" alt="Food Design 06">
+            </div>
+            <div class="project-info">
+                <h3>Food Promotion</h3>
+                <p>Creative Design</p>
+                <small>Tools: Figma</small>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art">
+                <img src="Images/Food/food 7 .jpeg" alt="Food Design 07">
+            </div>
+            <div class="project-info">
+                <h3>Food Specials</h3>
+                <p>Food Poster Design</p>
+                <small>Tools: Figma</small>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS ABOUT CONTACT -->
+
+<section class="bottom-grid reveal">
+
+    <!-- SKILLS -->
+
+    <div id="skills">
+
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill">
+                <i class="fab fa-html5"></i>
+                <span>HTML</span>
+            </div>
+
+            <div class="skill">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS</span>
+            </div>
+
+            <div class="skill">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="skill">
+                <i class="fab fa-figma"></i>
+                <span>Figma</span>
+            </div>
+
+            <div class="skill">
+                <i class="fas fa-palette"></i>
+                <span>Canva</span>
+            </div>
+
+            <div class="skill">
+                <i class="fas fa-pen-nib"></i>
+                <span>Graphic Design</span>
+            </div>
+
+            <div class="skill">
+                <i class="fas fa-file-excel"></i>
+                <span>MS Excel</span>
+            </div>
+
+            <div class="skill">
+                <i class="fas fa-file-word"></i>
+                <span>MS Word</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ABOUT -->
+
+    <div id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-content">
+
+            <div class="profile">AS</div>
+
+            <div class="about-text">
+
+                <h4>Turning ideas into real-world digital solutions.</h4>
+
+                <p>
+                    Hello! I'm Abarna Sekar, an Electronics and
+                    Communication Engineering graduate with a strong
+                    interest in Graphic Designing and Web Development.
+                </p>
+
+                <p>
+                    I completed my Graphic Design Internship at
+                    Decconz IT Solutions, where I worked on real-time
+                    client projects including social media creatives,
+                    branding materials and promotional posters.
+                </p>
+
+                <p>
+                    I enjoy creating visually appealing designs and
+                    building modern, user-friendly websites. I am
+                    continuously learning new technologies and
+                    improving my skills.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CONTACT -->
+
+    <div id="contact" class="contact-section">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-box">
+
+            <div class="contact-item">
+                <i class="far fa-user"></i>
+                <span>Abarna Sekar</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="far fa-envelope"></i>
+                <a href="mailto:abarnasekar@gmail.com">
+                    abarnasekara@gmail.com
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+91 9363292890</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Ariyalur, Tamil Nadu, India</span>
+            </div>
+
+           
+<div class="contact-item">
+    <i class="fab fa-linkedin-in"></i>
+    <a href="https://www.linkedin.com/in/abarna-s-5460a832b/"
+       target="_blank"
+       rel="noopener noreferrer">
+        LinkedIn Profile
+    </a>
+</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="container">
+        © 2026 Abarna Sekar. All Rights Reserved.
+    </div>
+</footer>
+
+<script>
+
+// MOBILE MENU
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", function() {
+
+    navLinks.classList.toggle("open");
+
+    menuBtn.innerHTML = navLinks.classList.contains("open")
+        ? '<i class="fas fa-times"></i>'
+        : '<i class="fas fa-bars"></i>';
+
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("open");
+        menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+
+    });
+
+});
+
+// SCROLL ANIMATION
+
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+
+    });
+
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".reveal").forEach(section => {
+    observer.observe(section);
+});
+
+</script>
+
+</body>
+</html>
+```
